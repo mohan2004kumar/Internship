@@ -23,7 +23,10 @@ net use \\127.0.0.1\IPC$ /user:FakeUser P@ssword123
 - **Wazuh Dashboard:** Displayed the same events, confirming the activity was logged and forwarded.
 
 ## Screenshots
-- **Event Viewer Logs:** ![Event Viewer Logs](../screenshots/event-logs.png)  
+- **Event Viewer Logs:** ![Event Viewer Logs](../screenshots/eventlogs-1.png)
+- **Event Viewer Logs:** ![Event Viewer Logs](../screenshots/eventlogs-2.png)
+- **Event Viewer Logs:** ![Event Viewer Logs](../screenshots/eventlogs-3.png)
+- **Event Viewer Logs:** ![Event Viewer Logs](../screenshots/eventlogs-4.png)
 - **Wazuh Logs:** ![Wazuh Logs](../screenshots/wazuh-logs.png)
 
 ## Analysis
