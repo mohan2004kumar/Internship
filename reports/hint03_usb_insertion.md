@@ -1,4 +1,3 @@
-# I understand you want to focus on **Hint 3: USB Drive Insertion** and create a report for it in the same format as the Hint 2 example you provided, as a single Markdown file (`hint03_usb_insertion.md`). You’d like the raw Markdown content first, followed by the steps to upload it to GitHub at the end. Below, I’ll provide the complete Markdown content for Hint 3, structured like Hint 2, and then the upload steps.
 
 ---
 
