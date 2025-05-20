@@ -30,6 +30,13 @@ Analyzing the logs helps identify patterns indicative of a brute force attack, w
 
 Pattern Observed: 11 failed login attempts (Event ID 4625) for the user FakeUser within a short time frame (e.g., within a minute), followed by a successful login (Event ID 4624).
 Key Fields Analyzed:
+Event Viewer Logs: 
+Wazuh Logs:
+
+Analysis
+Pattern Observed: 11 failed login attempts (Event ID 4625) for user FakeUser within a short time frame, followed by a successful login (Event ID 4624).
+Fields Analyzed:
+>>>>>>> 5f6f3c871a98cd582d4603fb2aa380a89cdc83a2
 win.eventdata.targetUserName: FakeUser
 win.eventdata.failureReason: "Unknown user name or bad password"
 win.eventdata.logonType: 3 (Network logon)
