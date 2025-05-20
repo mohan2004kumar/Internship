@@ -10,7 +10,7 @@ I attached a virtual USB device to my Windows 10 VM, copied a dummy batch file (
 ```bat
 @echo off
 echo This is a simulated malicious file from USB
-ping 8.8.8.8 -n 3
+ping 8.8.8.8 -n 3'''
 
 Description: The script outputs a message and pings 8.8.8.8 to simulate network activity.
 Logs Generated
