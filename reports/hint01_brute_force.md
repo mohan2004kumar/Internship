@@ -16,10 +16,15 @@ Event ID 4625 (Failed Logon): 11 events for FakeUser with failure reason "Unknow
 Event ID 4624 (Successful Logon): 1 event for FakeUser after the failed attempts.
 Wazuh Dashboard: Displayed the same events, confirming that Winlogbeat forwarded the logs correctly.
 
+PowerShell Logs: ![PowerShell Logs](../screenshots/powershell-log.png)
 
 Screenshots
-Event Viewer Logs:
+Event Viewer Logs: (../screenshots/eventlogs-1.png)
+(../screenshots/eventlogs-2.png)
+(../screenshots/eventlogs-3.png)
+(../screenshots/eventlogs-4.png)
 Wazuh Logs:
+(../screenshots/wazuh-logs.png)
 Analysis
 Pattern Observed: 11 failed login attempts (Event ID 4625) for user FakeUser within a short time frame, followed by a successful login (Event ID 4624).
 Fields Analyzed:
