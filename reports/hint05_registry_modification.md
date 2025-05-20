@@ -72,3 +72,32 @@ This simulation highlights how **malware achieves persistence** using registry m
 
 ---
 
+### **🔍 Summary of the Registry Modification Project**
+In this project, we simulated **malware persistence** by modifying a Windows **Startup Registry Key** using PowerShell. The goal was to observe **system logs**, particularly **Windows Event ID 4657**, using **Wazuh** and **Event Viewer**.
+
+#### **✅ Steps Completed**
+1. **Registry Modification**  
+   - Added an entry under `HKCU:\Software\Microsoft\Windows\CurrentVersion\Run`.  
+   - Command:  
+     ```powershell
+     Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run" -Name "evil" -Value "C:\temp\malware.exe"
+     ```
+
+2. **Log Analysis**  
+   - Tracked **Windows Event ID 4657** (Registry modifications).  
+   - Verified logs in **Wazuh Dashboard** and **Event Viewer**.
+
+3. **Cleanup**  
+   - Used PowerShell to remove the registry entry:  
+     ```powershell
+     Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run" -Name "evil"
+     ```
+
+#### **📌 Key Learnings**
+- **Registry keys can be exploited for persistence** by malware.  
+- **Monitoring logs is essential** to detect unauthorized changes.  
+- **Wazuh provides visibility into security events**, helping in threat detection.
+
+---
+
+
