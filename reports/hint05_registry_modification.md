@@ -72,7 +72,7 @@ This simulation highlights how **malware achieves persistence** using registry m
 
 ---
 
-### **🔍 Summary of the Registry Modification Project**
+### **🔍 Summary of the Registry Modification Task**
 In this project, we simulated **malware persistence** by modifying a Windows **Startup Registry Key** using PowerShell. The goal was to observe **system logs**, particularly **Windows Event ID 4657**, using **Wazuh** and **Event Viewer**.
 
 #### **✅ Steps Completed**
