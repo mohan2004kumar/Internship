@@ -14,7 +14,7 @@ powershell -enc UwB0AGEAcgB0AC0AUAByAG8AYwBlAHMAcwAgACIAcwBtAG8AYwBoAC4AZQB4AGUA
 - **Wazuh Dashboard:** Displayed both PowerShell and Sysmon events, confirming the activity was logged and forwarded.
 
 ## Screenshots
-- PowerShell Logs: ![PowerShell Logs](../screenshots/powershell-logs.png)
+- PowerShell Logs: ![PowerShell Logs](../screenshots/powershell-log.png)
 - Sysmon Logs: ![Sysmon Logs](../screenshots/sysmon-logs.png)
 - Wazuh Logs: ![Wazuh Logs](../screenshots/wazuh-powershell-logs.png)
 
