@@ -1,11 +1,8 @@
 
 ---
 
-### Markdown Content for `hint03_usb_insertion.md`
-
-```
 # Hint 3: USB Drive Insertion
-
+'''
 ## Simulation
 I simulated a USB drive insertion on my Windows 10 VM by attaching a virtual USB device, copying a dummy batch file (`dummy.bat`) from the USB, and executing it to mimic a malicious action from removable media.
 
