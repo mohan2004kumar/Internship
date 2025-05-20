@@ -56,7 +56,7 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run" -Na
 2. Navigate to **Windows Logs > Security**.
 3. Search for **Event ID 4657**.
 4. Screenshot:  
-   ![Event Viewer - Registry Change](.//screenshots/wazuh-registry.png)
+   ![Event Viewer - Registry Change](../screenshots/wazuh-registry.png)
 
 ---
 
