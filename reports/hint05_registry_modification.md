@@ -31,7 +31,7 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run" -Na
    ```
 3. Check for the `"evil"` entry.
 4. Screenshot:  
-   ![Registry Key](Registry Key.png)
+   ![Registry Key](\screenshots\Registry_Key.png)
 
 ---
 
@@ -49,14 +49,14 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run" -Na
 3. Filter logs by **Event ID 4657**.
 4. Look for modifications under `HKCU:\Software\Microsoft\Windows\CurrentVersion\Run`.
 5. Screenshot:  
-   ![Wazuh Logs](eventID-13.png)
+   ![Wazuh Logs](\screenshots\eventID-13.png)
 
 ### **Checking Logs in Event Viewer**
 1. Open **Event Viewer** (`Win + R`, type `eventvwr`, press `Enter`).
 2. Navigate to **Windows Logs > Security**.
 3. Search for **Event ID 4657**.
 4. Screenshot:  
-   ![Event Viewer - Registry Change](wazuh-registry.png)
+   ![Event Viewer - Registry Change](\screenshots\wazuh-registry.png)
 
 ---
 
