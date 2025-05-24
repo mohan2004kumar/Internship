@@ -21,11 +21,11 @@ echo Lateral movement simulation complete.
 - **Wazuh Dashboard:** Displayed the Sysmon events, confirming the activity was logged and forwarded.
 
 ## Screenshots
-- **Sysmon Log for `lateral_sim.bat` Execution (Event ID 1):** ![Lateral Sim Log](../screenshots/hint-7-1)  
-- **Sysmon Log for `net.exe` Command (Event ID 1):** ![Net.exe Log](../screenshots/hint-7-2)  
-- **Sysmon Log for Network Connection to `192.168.1.200` (Event ID 3):** ![Network Connection Log](../screenshots/hint-7-3)  
-- **Wazuh Log for `net.exe` Command (Event ID 1):** ![Wazuh Net.exe Log](../screenshots/hint-7-4)  
-- **Wazuh Log for Network Connection to `192.168.1.200` (Event ID 3):** ![Wazuh Network Connection Log](../screenshots/hint-7-5)
+- **Sysmon Log for `lateral_sim.bat` Execution (Event ID 1):** ![Lateral Sim Log](../screenshots/hint-7-1.png)  
+- **Sysmon Log for `net.exe` Command (Event ID 1):** ![Net.exe Log](../screenshots/hint-7-2.png)  
+- **Sysmon Log for Network Connection to `192.168.1.200` (Event ID 3):** ![Network Connection Log](../screenshots/hint-7-3.png)  
+- **Wazuh Log for `net.exe` Command (Event ID 1):** ![Wazuh Net.exe Log](../screenshots/hint-7-4.png)  
+- **Wazuh Log for Network Connection to `192.168.1.200` (Event ID 3):** ![Wazuh Network Connection Log](../screenshots/hint-7-5.png)
 
 ## Analysis
 - **Pattern Observed:** The script execution began with `lateral_sim.bat` running (Event ID 1, see hint-7-1), which invoked `net.exe` to attempt a connection to `\\192.168.1.200\IPC$` (Event ID 1, see hint-7-2 and hint-7-4). The connection failed with "System error 67: The network name cannot be found," as the target IP `192.168.1.200` is not reachable from my VM’s subnet (`192.168.136.0/24`). The `dir` command also failed ("The network path was not found"). A `ping` to `192.168.1.200` resulted in "Destination host unreachable" replies from `192.168.1.209`, logged as a network connection attempt (Event ID 3, see hint-7-3 and hint-7-5).  
