@@ -1,0 +1,144 @@
+{
+  "_index": "wazuh-alerts-4.x-2025.05.20",
+  "_id": "gS6S65YBBN0hlgFldAjB",
+  "_score": null,
+  "_source": {
+    "syscheck": {
+      "mode": "scheduled",
+      "path": "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\webthreatdefusersvc_108762\\Security",
+      "uname_after": "SYSTEM",
+      "gname_after": "SYSTEM",
+      "mtime_after": "2025-05-19T11:14:00",
+      "uid_after": "S-1-5-18",
+      "gid_after": "S-1-5-18",
+      "arch": "[x32]",
+      "win_perm_after": [
+        {
+          "allowed": [
+            "DELETE",
+            "READ_CONTROL",
+            "WRITE_DAC",
+            "WRITE_OWNER",
+            "READ_DATA",
+            "WRITE_DATA",
+            "APPEND_DATA",
+            "READ_EA",
+            "WRITE_EA",
+            "EXECUTE",
+            [
+              "DELETE",
+              "READ_CONTROL",
+              "WRITE_DAC",
+              "WRITE_OWNER",
+              "READ_DATA",
+              "WRITE_DATA",
+              "APPEND_DATA",
+              "READ_EA",
+              "WRITE_EA",
+              "EXECUTE"
+            ]
+          ],
+          "name": "SYSTEM"
+        },
+        {
+          "allowed": [
+            "DELETE",
+            "READ_CONTROL",
+            "WRITE_DAC",
+            "WRITE_OWNER",
+            "READ_DATA",
+            "WRITE_DATA",
+            "APPEND_DATA",
+            "READ_EA",
+            "WRITE_EA",
+            "EXECUTE"
+          ],
+          "name": "Administrators"
+        }
+      ],
+      "event": "deleted"
+    },
+    "input": {
+      "type": "log"
+    },
+    "agent": {
+      "ip": "192.168.136.1",
+      "name": "Mohan",
+      "id": "001"
+    },
+    "manager": {
+      "name": "wazuh-server"
+    },
+    "rule": {
+      "mail": false,
+      "level": 5,
+      "pci_dss": [
+        "11.5"
+      ],
+      "hipaa": [
+        "164.312.c.1",
+        "164.312.c.2"
+      ],
+      "tsc": [
+        "PI1.4",
+        "PI1.5",
+        "CC6.1",
+        "CC6.8",
+        "CC7.2",
+        "CC7.3"
+      ],
+      "description": "Registry Key Entry Deleted.",
+      "groups": [
+        "ossec",
+        "syscheck",
+        "syscheck_entry_deleted",
+        "syscheck_registry"
+      ],
+      "nist_800_53": [
+        "SI.7"
+      ],
+      "gdpr": [
+        "II_5.1.f"
+      ],
+      "firedtimes": 61,
+      "mitre": {
+        "technique": [
+          "File Deletion",
+          "Data Destruction",
+          "Modify Registry"
+        ],
+        "id": [
+          "T1070.004",
+          "T1485",
+          "T1112"
+        ],
+        "tactic": [
+          "Defense Evasion",
+          "Impact"
+        ]
+      },
+      "id": "597",
+      "gpg13": [
+        "4.13"
+      ]
+    },
+    "location": "syscheck",
+    "decoder": {
+      "name": "syscheck_registry_key_deleted"
+    },
+    "id": "1747708963.2781913",
+    "full_log": "Registry Key '[x32] HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\webthreatdefusersvc_108762\\Security' deleted\nMode: scheduled\n",
+    "timestamp": "2025-05-20T02:42:43.235+0000"
+  },
+  "fields": {
+    "syscheck.mtime_after": [
+      "2025-05-19T11:14:00.000Z"
+    ],
+    "timestamp": [
+      "2025-05-20T02:42:43.235Z"
+    ]
+  },
+  "sort": [
+    1747708963235
+  ]
+}
