@@ -1,0 +1,85 @@
+{
+  "_index": "wazuh-alerts-4.x-2025.05.25",
+  "_id": "ho-hCJcBgWbf35eVjlOw",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "input": {
+      "type": "log"
+    },
+    "agent": {
+      "ip": "192.168.136.130",
+      "name": "DESKTOP-L7UOH9E",
+      "id": "004"
+    },
+    "manager": {
+      "name": "wazuh-server"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "subjectLogonId": "0x93304",
+          "newProcessName": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe",
+          "targetLogonId": "0x0",
+          "parentProcessName": "C:\\\\Windows\\\\System32\\\\cmd.exe",
+          "subjectUserSid": "S-1-5-21-228664159-737556848-2556850720-1001",
+          "processId": "0x177c",
+          "subjectDomainName": "DESKTOP-L7UOH9E",
+          "tokenElevationType": "%%1938",
+          "targetUserSid": "S-1-0-0",
+          "newProcessId": "0x2070",
+          "mandatoryLabel": "S-1-16-8192",
+          "subjectUserName": "mohan"
+        },
+        "system": {
+          "eventID": "4688",
+          "keywords": "0x8020000000000000",
+          "providerGuid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "level": "0",
+          "channel": "Security",
+          "opcode": "0",
+          "message": "\"A new process has been created.\r\n\r\nCreator Subject:\r\n\tSecurity ID:\t\tS-1-5-21-228664159-737556848-2556850720-1001\r\n\tAccount Name:\t\tmohan\r\n\tAccount Domain:\t\tDESKTOP-L7UOH9E\r\n\tLogon ID:\t\t0x93304\r\n\r\nTarget Subject:\r\n\tSecurity ID:\t\tS-1-0-0\r\n\tAccount Name:\t\t-\r\n\tAccount Domain:\t\t-\r\n\tLogon ID:\t\t0x0\r\n\r\nProcess Information:\r\n\tNew Process ID:\t\t0x2070\r\n\tNew Process Name:\tC:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\r\n\tToken Elevation Type:\t%%1938\r\n\tMandatory Label:\t\tS-1-16-8192\r\n\tCreator Process ID:\t0x177c\r\n\tCreator Process Name:\tC:\\Windows\\System32\\cmd.exe\r\n\tProcess Command Line:\t\r\n\r\nToken Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.\r\n\r\nType 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.\r\n\r\nType 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.\r\n\r\nType 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.\"",
+          "version": "2",
+          "systemTime": "2025-05-25T18:08:10.1860411Z",
+          "eventRecordID": "251495",
+          "threadID": "364",
+          "computer": "DESKTOP-L7UOH9E",
+          "task": "13312",
+          "processID": "4",
+          "severityValue": "AUDIT_SUCCESS",
+          "providerName": "Microsoft-Windows-Security-Auditing"
+        }
+      }
+    },
+    "rule": {
+      "firedtimes": 21,
+      "mail": false,
+      "level": 3,
+      "description": "A process was created.",
+      "groups": [
+        "windows",
+        " WEF"
+      ],
+      "id": "67027"
+    },
+    "location": "EventChannel",
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "id": "1748196490.8393169",
+    "timestamp": "2025-05-25T18:08:10.823+0000"
+  },
+  "fields": {
+    "timestamp": [
+      "2025-05-25T18:08:10.823Z"
+    ]
+  },
+  "highlight": {
+    "agent.ip": [
+      "@opensearch-dashboards-highlighted-field@192.168.136.130@/opensearch-dashboards-highlighted-field@"
+    ]
+  },
+  "sort": [
+    1748196490823
+  ]
+}
